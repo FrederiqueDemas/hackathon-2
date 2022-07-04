@@ -4,7 +4,7 @@ import papa from "papaparse";
 import { toast } from "react-toastify";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL,
+  baseURL: import.meta.env.VITE_PROD_URL ?? "http://localhost:5500",
   withCredentials: true,
 });
 

@@ -13,4 +13,11 @@ export default defineConfig({
       "@services": path.resolve(__dirname, "src/services"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        dir: "../backend/public",
+      },
+    },
+  },
 });
